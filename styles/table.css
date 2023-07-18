@@ -1,0 +1,305 @@
+/* table */
+.table--container {
+    border: 1px solid var(--light-grey1-clr);
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin-inline: 24px;
+    margin-top: 24px;
+    margin-right: 0;
+    background-color: var(--white-clr);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 
+        48px 
+        120px 
+        100px
+        100px
+        160px
+        477px
+        150px
+        48px;
+    position: relative;
+}
+
+.order .table {
+    display: grid;
+    grid-template-columns: 
+        48px 
+        120px 
+        100px
+        427px
+        100px
+        100px
+        100px
+        160px
+        48px;
+}
+
+.table--container:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.table--container:last-of-type {
+    margin-bottom: 24px;
+}
+
+.table--title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text1-color);
+    background-color: var(--light-grey2-clr);
+    padding-block: 9.5px;
+}
+
+.table-type--title {
+    padding: 12px 20px;
+    background-color: var(--white-clr);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    font-weight: 500;
+}
+
+.table-type--title span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D2433;
+    margin-left: 8px;
+}
+
+h3.table--title {
+    padding-inline: 8px;
+}
+
+.table p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cell--wrapper {
+    height: 36px;
+    padding: 8px;
+    border-bottom: 1px solid var(--light-color);
+}
+
+/* checkbox cell */
+.checkbox {
+    padding-block: 12.25px;
+}
+
+.table--checkbox > div > .cell--checkbox {
+    border: 2px solid #1D2433CC;
+}
+
+.cell--checkbox {
+    appearance: none;
+    border: 2px solid #ADBBCA;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.cell--checkbox:checked {
+    background: url('../check.svg') no-repeat right;
+    background-color: #3D8AF6;
+    border: 2px solid #3D8AF6;
+    background-position: 0.5px 1.5px;
+}
+
+.checked {
+    background-color: #E8F1FE;
+}
+
+/* date cell */
+.due {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--danger);
+    background-color: var(--danger-bg);
+    padding: 2px 4px;
+    border-radius: var(--radius);
+    width: max-content;
+}
+
+.due:empty {
+    all: unset;
+    display: none;
+}
+
+
+/* state cell */
+.state {
+    border-radius: var(--radius);
+}
+
+.state p {
+    margin-left: 4px;
+    text-transform: uppercase;
+}
+
+.state--shape {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    margin: 4px;
+    background-color: var(--light-grey1-clr);
+}
+
+.state--inprogress .state--shape { 
+    background-color: #3D8AF6;
+}
+
+.state--inprogress p { 
+    color: #3D8AF6;
+}
+
+.state--pending .state--shape,
+.state--complete .state--shape { 
+    background-color: #1D2433CC;
+}
+
+.state--pending p,
+.state--complete p { 
+    color: #1D2433CC;
+}
+
+.state--success .state--shape { 
+    background-color: #5ABB7A;
+}
+
+.state--success p { 
+    color: #5ABB7A;
+}
+
+.state--cancelled .state--shape { 
+    background-color: var(--danger);
+}
+
+.state--cancelled p { 
+    color: var(--danger);
+}
+
+.table--total .table--title {
+    text-align: right;
+}
+
+.table--product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 427px;
+}
+
+/* paginate */
+.paginate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.paginate__results p,
+.paginate__page p {
+    margin-right: 8px;
+    font-size: 12px;
+    color: var(--text1-color)
+}
+
+.option--dropdown {
+    appearance: none;
+    width: 63px;
+    border: 1px solid #ADBBCA;
+    border-radius: var(--radius);
+    padding: 6px 9px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    background: url('../caret.svg') no-repeat right white;
+    background-position: 33px;
+}
+
+.option--dropdown option {
+    font-size: 14px;
+}
+
+.paginate__num .option__btn {
+    min-width: 32px;
+    max-height: 32px;
+    margin: 0;
+    padding: 8px;
+}
+
+.paginate__num span {
+    text-align: center;
+    margin-inline: 12px;
+}
+
+.cell__block {
+    border-bottom: 1px solid var(--light-color);
+    height: 36px;
+    padding: 8px;
+}
+
+.table p {
+    font-size: 14px;
+}
+
+.cell__checkbox.table--title {
+    display: grid;
+    place-content: center;
+}
+
+.table__heading-block .cell__checkbox-label {
+    background-color: var(--light-grey2-clr);
+}
+
+.table__heading-block .cell__checkbox--row {
+    border: 1.5px solid #1D2433CC;
+    border-radius: 2.5px;
+}
+
+.cell__checkbox-label {
+    cursor: pointer;
+}
+
+.cell__checkbox--row {
+    height: 15px;
+    width: 15px;
+    border: 2.5px solid #ADBBCA;
+    appearance: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16.5px;
+    cursor: pointer;
+}
+
+.cell__checkbox--row:checked ~ .cell__block,
+.cell__checkbox--row:checked ~ .cell__block,
+.cell__checkbox--row:checked ~ label {
+    background-color: #E8F1FE;
+}
+
+.cell__checkbox--row:checked {
+    background: url('../check.svg') no-repeat right;
+    background-color: #3D8AF6;
+    border: 2px solid transparent;
+    background-position: -0.5px 1.5px;
+}
+
+@media screen and (max-width: 1620px) {
+    .table--container {
+        max-width: calc(100vw - 408px);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .table--container {
+        max-width: calc(100vw - 48px);
+    }
+}

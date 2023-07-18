@@ -1,0 +1,97 @@
+.accordion {
+    border-bottom: 1px solid #E1E6EF;
+    max-width: 360px;
+    padding: 20px 20px 0px;
+
+    position: relative;
+    overflow: hidden;
+    transform: all 0.3s ease;
+}
+
+.acc__label,
+.acc__tab-right,
+.acc__tab-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acc__tab-left--title {
+    margin-inline: 8px 10px;
+}
+
+.acc__label {
+    margin-bottom: 20px;
+}
+
+.acc__trigger {
+    all: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 63px; /* make this as variable */
+    /* background-color: orange; */
+    cursor: pointer;
+}
+
+.acc__form--container {
+    height: 0;
+    transform: all 0.3s ease;
+}
+
+.acc__form--container form div:last-of-type {
+    margin-bottom: 24px;
+}
+
+.acc__tab-right svg,
+.acc__tab-right img {
+    transform: rotate(0deg);
+}
+
+.acc__trigger:checked ~ .acc__form--container {
+    height: 100%;
+}
+
+.acc__trigger:checked ~ .acc__label .acc__tab-right svg,
+.acc__trigger:checked ~ .acc__label .acc__tab-right img {
+    transform: rotate(180deg);
+}
+
+/* test */
+.acc__tab-right span {
+    position: relative;
+    z-index: 10;
+    background-color: crimson;
+}
+
+.acc__clear,
+.acc__label-clear {
+    position: absolute;
+    right: 40px;
+    top: 22px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* hide the clear input box */
+.acc__clear {
+    right: 90px;
+    display: none;
+}
+
+.acc__label-clear {
+    width: 35px;
+    color: #166EE8;
+    margin-right: 8px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.acc__field--empty {
+    --light-grey1-clr: #E1E6EF;
+    font-size: 14px;
+    color: var(--light-grey1-clr);
+    margin-bottom: 24px;
+}
