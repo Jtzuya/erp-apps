@@ -1,0 +1,49 @@
+:root {
+    --breadcrumb-bg: rgba(225, 230, 239, 1);
+    --curr-path: rgba(29, 36, 51, 0.75);
+    --prev-path: rgba(29, 36, 51, 0.5);
+}
+
+.apps__breadcrumb {
+    display: flex;
+    align-items: center;
+    background-color: var(--breadcrumb-bg);
+    padding: 7.5px 24px;
+    width: 100%;
+    max-width: 1251px;
+    margin-left: auto;
+} 
+
+.apps__breadcrumb.hidden {
+    display: none;
+}
+
+.apps__breadcrumb *:not(:last-child) {
+    margin-right: 16px;
+}
+
+.caret--backwards {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgba(241, 243, 249, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.link__path {
+    font-size: 20px;
+    font-weight: 96;
+    line-height: 24px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.current__path {
+    color: var(--curr-path);
+}
+
+.prev__path {
+    color: var(--prev-path);
+}

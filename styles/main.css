@@ -36,6 +36,7 @@
     --transition-drawer: all 0.25s cubic-bezier(0.79, 0.33, 0.14, 0.53);
 
     --sales-bg-clr: #F8F9FC;
+    --sidebar-link-active: rgba(232, 235, 240, 1);
 }
 
 * {
@@ -206,6 +207,9 @@ header {
 
 .filter--container {
     padding: 20px;
+}
+
+.filter--container:not( + .sidebar__links) {
     border-bottom: 1px solid var(--light-grey1-clr);
 }
 
@@ -352,6 +356,54 @@ span.acc_count:empty {
 
 .filter--search {
     background-color: #F8F9FC;
+}
+
+/* sidebar as links */
+.sidebar__links {
+}
+
+.sidebar__link,
+.category__link {
+    display: flex;
+    align-items: center;
+    padding-block: 8px;
+    padding-inline: 20px;
+    transition: var(--transition);
+}
+
+.sidebar__link span,
+.category__link span {
+    margin-left: 8px;
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 115;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    flex: 1;
+}
+
+.sidebar__link.sidebar--active,
+.category__link.sidebar--active,
+.sidebar__link:hover,
+.category__link:hover {
+    background-color: var(--sidebar-link-active);
+}
+
+/* sidebar categories */
+.sidebar__categories {
+    margin-top: 12px;
+}
+
+.sidebar__category-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 115;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 10px 20px;
+    color: rgba(29, 36, 51, 0.75);
 }
 
 .mobile__menu,
