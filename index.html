@@ -20,6 +20,7 @@
     
     <!-- apps breadcrumb -->
     <link rel="stylesheet" href="./styles/breadcrumb.css">
+    <link rel="stylesheet" href="./styles/app_card.css">
 </head>
 <body>
     <!-- page main header -->
@@ -84,7 +85,7 @@
                     <div class="filter__header">
                         <p>App Store</p>
                     </div>
-                    <form action="#">
+                    <form action="#" class="search--form">
                         <div class="filter__field filter--search">
                             <label for="search">
                                 <input type="search" name="search" id="search" placeholder="Search">
@@ -204,571 +205,581 @@
                     <a href="" class="current__path link__path">Motionmail</a>                    
                 </div>
 
-                <section class="tables">
-                    <!-- inventory data table -->
-                    <div class="inventory table--container">
-                        <p class="table-type--title">Inventory data</p>
-                        <div class="table table__heading-block">
-                            <input type="checkbox" name="checkbox" id="test__heading-row" class="cell__checkbox--row">
-                            <label for="test__heading-row" class="cell__block cell__checkbox cell__checkbox-label"></label>
-                            <h3 class="table--title">Document no</h3>
-                            <h3 class="table--title">Date</h3>
-                            <h3 class="table--title">Quantity</h3>
-                            <h3 class="table--title">State</h3>
-                            <h3 class="table--title">Customer</h3>
-                            <h3 class="table--title">Note</h3>
-                            <h3 class="table--title">&nbsp;</h3>
+                <div class="apps__home">
+                    <div class="apps__home--header">
+                        <h1>Elevate your store with the premier apps available</h1>
+                        <form action="#" class="search--form">
+                            <div class="filter__field filter--search">
+                                <label for="search">
+                                    <input type="search" name="search" id="search" placeholder="Search">
+                                </label>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79166 8.74999C4.79166 6.56386 6.56386 4.79166 8.74999 4.79166C10.9361 4.79166 12.7083 6.56386 12.7083 8.74999C12.7083 10.9361 10.9361 12.7083 8.74999 12.7083C6.56386 12.7083 4.79166 10.9361 4.79166 8.74999ZM8.74999 3.54166C5.87351 3.54166 3.54166 5.87351 3.54166 8.74999C3.54166 11.6265 5.87351 13.9583 8.74999 13.9583C9.96796 13.9583 11.0883 13.5403 11.9753 12.8398C11.9988 12.876 12.0263 12.9102 12.058 12.9419L16.2247 17.1086C16.4688 17.3527 16.8645 17.3527 17.1086 17.1086C17.3527 16.8645 17.3527 16.4688 17.1086 16.2247L12.9419 12.058C12.9102 12.0263 12.876 11.9988 12.8398 11.9753C13.5403 11.0883 13.9583 9.96796 13.9583 8.74999C13.9583 5.87351 11.6265 3.54166 8.74999 3.54166Z" fill="#1D2433" fill-opacity="0.75"/>
+                                </svg>                        
+                            </div>
+                        </form>
+                    </div>
+                    <div class="apps__row">
+                        <div class="apps__row--header">
+                            <p>Top apps</p>
+                            <a href="/" class="see__more">see more</a>
                         </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--1" class="cell__checkbox--row">
-                            <label for="table__test-row--1" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--inprogress flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>In progress</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--2" class="cell__checkbox--row">
-                            <label for="table__test-row--2" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--pending flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Pending</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--3" class="cell__checkbox--row">
-                            <label for="table__test-row--3" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--4" class="cell__checkbox--row">
-                            <label for="table__test-row--4" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--5" class="cell__checkbox--row">
-                            <label for="table__test-row--5" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--cancelled flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Cancelled</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--6" class="cell__checkbox--row" checked>
-                            <label for="table__test-row--6" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--7" class="cell__checkbox--row">
-                            <label for="table__test-row--7" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--8" class="cell__checkbox--row">
-                            <label for="table__test-row--8" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--9" class="cell__checkbox--row">
-                            <label for="table__test-row--9" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--cancelled flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Cancelled</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <input type="checkbox" name="checkbox" id="table__test-row--10" class="cell__checkbox--row">
-                            <label for="table__test-row--10" class="cell__block cell__checkbox cell__checkbox-label"></label>
-    
-                            <p class="cell__block flex flex-col justify-center">2023-10LS1</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell__block flex flex-col justify-center">2852</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Success</p>
-                                </div>
-                            </div>
-                            <p class="cell__block flex flex-col justify-center">Lydia Dias</p>
-                            <p class="cell__block flex flex-col justify-center items-end"></p>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="paginate">
-                            <div class="paginate__results flex justify-center items-center">
-                                <p>Results per page</p>
-                                <label for="inventory_results_page_num"></label>
-                                <select name="inventory_results_page_num" id="inventory_results_page_num" class="option--dropdown">
-                                    <option value="10">10</option>
-                                    <option value="30">30</option>                       
-                                </select>
-                            </div>
-        
-                            <div class="paginate__num flex justify-center items-center">
-                                <a role="button" class="option__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1487_7013)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.68689 4.8131C9.88215 5.00837 9.88215 5.32495 9.68689 5.52021L7.37378 7.83332L9.68689 10.1464C9.88215 10.3417 9.88215 10.6583 9.68689 10.8535C9.49163 11.0488 9.17505 11.0488 8.97978 10.8535L6.31312 8.18688C6.11786 7.99161 6.11786 7.67503 6.31312 7.47977L8.97978 4.8131C9.17505 4.61784 9.49163 4.61784 9.68689 4.8131Z" fill="#1D2433" fill-opacity="0.5"/>
+                        <div class="apps__grid">
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
                                         </g>
                                         <defs>
-                                        <clipPath>
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
                                         </defs>
-                                    </svg>
-                                </a>
-                                <span>1</span>
-                                <a role="button" class="option__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1487_7018)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31312 10.8535C6.11786 10.6583 6.11786 10.3417 6.31312 10.1464L8.62623 7.83332L6.31312 5.52021C6.11786 5.32495 6.11786 5.00837 6.31312 4.8131C6.50838 4.61784 6.82496 4.61784 7.02023 4.8131L9.68689 7.47977C9.88215 7.67503 9.88215 7.99161 9.68689 8.18688L7.02023 10.8535C6.82496 11.0488 6.50838 11.0488 6.31312 10.8535Z" fill="#333333"/>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
                                         </g>
                                         <defs>
-                                        <clipPath>
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
                                         </defs>
-                                    </svg>
-                                </a>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
                             </div>
-        
-                            <div class="paginate__page flex justify-center items-center">
-                                <p>Page</p>
-                                <label for="inventory_page_num"></label>
-                                <select name="inventory_page_num" id="inventory_page_num"  class="option--dropdown">
-                                    <option value="10">10</option>
-                                    <option value="30">30</option>                       
-                                </select>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
                             </div>
                         </div>
                     </div>
-    
-                    <!-- order data table -->
-                    <div class="order table--container">
-                        <p class="table-type--title">Order data <span>#2023-10lS1 Tóth Kamilla</span></p>
-                        <div class="table table__heading-block">
-                            <h3 class="table--title">No</h3>
-                            <h3 class="table--title">Order Id</h3>
-                            <h3 class="table--title">Date</h3>
-                            <h3 class="table--title">Product name</h3>
-                            <h3 class="table--title">Quantity</h3>
-                            <h3 class="table--title">Price</h3>
-                            <h3 class="table--title">Subtotal</h3>
-                            <h3 class="table--title">State</h3>
-                            <h3 class="table--title">&nbsp;</h3>
+                    <div class="apps__row">
+                        <div class="apps__row--header">
+                            <p>Top apps</p>
+                            <a href="/" class="see__more">see more</a>
                         </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">1</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Stilema | SI3.01.2 | 400 x 300 cm by YO2</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">2</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Craze x Chase 710 by OBJECT CARPET</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">3</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Palissade Chaise Longue Hot Galvanised by HAY</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">4</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Osaka Sofa with resting unit, tufted seat by BoConcept</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">5</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Rubik Sofa by HESSENTIA | Cornelio Cappellini</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">6</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Eames Fiberglass Side Chair by Vitra</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">7</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p 
-                                title="3M™ DI-NOC™ Architectural Finishes Nuno (Textile) NU-2176MT, 1220 mm x 50 m by 3M"
-                                class="cell--wrapper flex flex-col justify-center table--product-name"
-                            >3M™ DI-NOC™ Architectural Finishes Nuno (Textile) NU-2176MT, 1220 mm x 50 m by 3M</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">8</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p 
-                                title="3M™ DI-NOC™ Architectural Finishes Nuno (Textile) NU-2176MT, 1220 mm x 50 m by 3M"
-                                class="cell--wrapper flex flex-col justify-center cell__block flex flex-col justify-center table--product-name"
-                            >3M™ DI-NOC™ Architectural Finishes Nuno (Textile) NU-2176MT, 1220 mm x 50 m by 3M</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">9</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Decorative Cement Tile | Braided by Eso Surfaces</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="table">
-                            <p class="cell__block flex flex-col justify-center">10</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">02.12.2022</p>
-                            <p class="cell--wrapper flex flex-col justify-center table--product-name">Decorative Cement Tile | Braided by Eso Surfaces</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <p class="cell__block flex flex-col justify-center">272017</p>
-                            <div class="cell__block flex items-center">
-                                <div class="state state--success flex items-center">
-                                    <span class="state--shape"></span>
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-                            <div class="cell__block flex items-center justify-center cursor">
-                                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.7222 0.166687C0.95514 0.166687 0.333313 0.788514 0.333313 1.55558C0.333313 2.32264 0.95514 2.94446 1.7222 2.94446C2.48926 2.94446 3.11109 2.32264 3.11109 1.55558C3.11109 0.788514 2.48926 0.166687 1.7222 0.166687ZM1.7222 4.6112C0.95514 4.6112 0.333313 5.23303 0.333313 6.00009C0.333313 6.76715 0.95514 7.38898 1.7222 7.38898C2.48926 7.38898 3.11109 6.76715 3.11109 6.00009C3.11109 5.23303 2.48926 4.6112 1.7222 4.6112ZM0.333313 10.8611C0.333313 10.0941 0.95514 9.47225 1.7222 9.47225C2.48926 9.47225 3.11109 10.0941 3.11109 10.8611C3.11109 11.6282 2.48926 12.25 1.7222 12.25C0.95514 12.25 0.333313 11.6282 0.333313 10.8611Z" fill="#1D2433" fill-opacity="0.75"/>
-                                </svg>
-                            </div>
-                        </div>
-    
-                        <div class="paginate">
-                            <div class="paginate__results flex justify-center items-center">
-                                <p>Results per page</p>
-                                <label for="order_results_page_num"></label>
-                                <select name="order_results_page_num" id="order_results_page_num" class="option--dropdown">
-                                    <option value="10">10</option>
-                                    <option value="30">30</option>                       
-                                </select>
-                            </div>
-        
-                            <div class="paginate__num flex justify-center items-center">
-                                <a role="button" class="option__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1487_7013)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.68689 4.8131C9.88215 5.00837 9.88215 5.32495 9.68689 5.52021L7.37378 7.83332L9.68689 10.1464C9.88215 10.3417 9.88215 10.6583 9.68689 10.8535C9.49163 11.0488 9.17505 11.0488 8.97978 10.8535L6.31312 8.18688C6.11786 7.99161 6.11786 7.67503 6.31312 7.47977L8.97978 4.8131C9.17505 4.61784 9.49163 4.61784 9.68689 4.8131Z" fill="#1D2433" fill-opacity="0.5"/>
+                        <div class="apps__grid">
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
                                         </g>
                                         <defs>
-                                        <clipPath>
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
                                         </defs>
-                                    </svg>
-                                </a>
-                                <span>1</span>
-                                <a role="button" class="option__btn">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1487_7018)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.31312 10.8535C6.11786 10.6583 6.11786 10.3417 6.31312 10.1464L8.62623 7.83332L6.31312 5.52021C6.11786 5.32495 6.11786 5.00837 6.31312 4.8131C6.50838 4.61784 6.82496 4.61784 7.02023 4.8131L9.68689 7.47977C9.88215 7.67503 9.88215 7.99161 9.68689 8.18688L7.02023 10.8535C6.82496 11.0488 6.50838 11.0488 6.31312 10.8535Z" fill="#333333"/>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
                                         </g>
                                         <defs>
-                                        <clipPath>
-                                        <rect width="16" height="16" fill="white"/>
-                                        </clipPath>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
                                         </defs>
-                                    </svg>
-                                </a>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
                             </div>
-        
-                            <div class="paginate__page flex justify-center items-center">
-                                <p>Page</p>
-                                <label for="order_page_num"></label>
-                                <select name="order_page_num" id="order_page_num"  class="option--dropdown">
-                                    <option value="10">10</option>
-                                    <option value="30">30</option>                       
-                                </select>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <div class="apps__row">
+                        <div class="apps__row--header">
+                            <p>Top apps</p>
+                            <a href="/" class="see__more">see more</a>
+                        </div>
+                        <div class="apps__grid">
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apps__row">
+                        <div class="apps__row--header">
+                            <p>Top apps</p>
+                            <a href="/" class="see__more">see more</a>
+                        </div>
+                        <div class="apps__grid">
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apps__row">
+                        <div class="apps__row--header">
+                            <p>Top apps</p>
+                            <a href="/" class="see__more">see more</a>
+                        </div>
+                        <div class="apps__grid">
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                            <div class="app__grid">
+                                <div class="app__grid--header">
+                                    <img src="./motionmail.png" alt="">
+                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2.75" y="1" width="40" height="24" rx="12" fill="#DEDEE8"/>
+                                        <g filter="url(#filter0_d_101_19187)">
+                                        <circle cx="10" cy="10" r="10" transform="matrix(-1 0 0 1 24.75 3)" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_101_19187" x="0.75" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_101_19187"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_101_19187" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>                                                                       
+                                </div>
+                                <p class="app__title">Motionmail</p>
+                                <p class="app__desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
+                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>

@@ -1,0 +1,89 @@
+.apps__home--header {
+    padding-bottom: 40px;
+}
+
+.apps__row--header {
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps__row--header p {
+    font-family: Erply Ladna;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.see__more {
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(61, 138, 246, 1);
+}
+
+.apps__row {
+    padding-bottom: 32px;
+}
+
+.apps__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+}
+
+.app__grid {
+    width: 100%;
+    max-width: 283.75px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(225, 230, 239, 1);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.app__grid--header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.app__title {
+    margin-bottom: 8px;
+    font-family: Erply Ladna;
+    font-size: 18px;
+    font-weight: 115;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.app__desc {
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 96;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 0.75);
+    margin-bottom: 20px;
+}
+
+.app__cta {
+    font-family: Erply Ladna;
+    font-size: 14px;
+    font-weight: 115;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 7.5px 24px;
+    background-color: rgba(61, 138, 246, 1);
+    border-radius: 4px;
+    color: #ffffff;
+}
