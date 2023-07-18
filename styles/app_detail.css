@@ -1,0 +1,195 @@
+.apps__detail {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.apps__detail--last {
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+}
+
+.apps__detail > div {
+    width: 100%;
+    max-width: 443px;
+}
+
+.apps__detail h1,
+.apps__detail--last h2 {
+    font-family: Erply Ladna;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+    margin-bottom: 20px;
+}
+
+.apps__detail--last h2 {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.apps__detail--last .app__detail {
+    max-width: 811px;
+    width: 100%;
+}
+
+.app__detail--last {
+    padding-right: 40px;
+}
+
+.app__complete-desc {
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.app__img {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.app__mini-desc {
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;    
+    color: rgba(29, 36, 51, 1);
+    margin-bottom: 20px;
+}
+
+.app__overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.app__sub {
+    margin-bottom: 20px;
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);    
+}
+
+.app__cta {
+    background-color: #3D8AF6;
+    color: #ffffff;
+    border-radius: 4px;
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 96;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 10.5px 59px;   
+}
+
+.app__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.app__slider img {
+    /* width: 100%; */
+    width: 600px;
+}
+
+.arrow {
+    padding: 6px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    height: 32px;
+    width: 32px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.arrow.right {
+    transform: rotate(180deg);
+}
+
+.app__similar--apps {
+    padding: 40px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.app__similar--apps .apps__row--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.similar__app--block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 27px;
+    /* justify-content: center; */
+}
+
+.app--block-content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apps__row--header > p{
+    font-family: Erply Ladna;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.see__more {
+
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(61, 138, 246, 1);
+}
+
+.app--block-content .app__title{
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 115;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.app--block-content .app__type {
+    font-family: Erply Ladna;
+    font-size: 14px;
+    font-weight: 96;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 0.75);
+}
