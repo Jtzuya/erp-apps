@@ -10,7 +10,8 @@
     background-color: var(--breadcrumb-bg);
     padding: 7.5px 24px;
     width: 100%;
-    max-width: 1251px;
+    /* max-width: 1251px; */
+    overflow: scroll;
     margin-left: auto;
 } 
 

@@ -1,7 +1,8 @@
 .apps__detail {
     padding: 40px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 443px) minmax(0, 680px);
+    gap: 45px;
 }
 
 .apps__detail--last {
@@ -10,9 +11,10 @@
     display: flex;
 }
 
-.apps__detail > div {
+.apps__detail > .app__detail {
     width: 100%;
     max-width: 443px;
+    position: relative;
 }
 
 .apps__detail h1,
@@ -69,9 +71,32 @@
     margin-bottom: 20px;
 }
 
+.app__overview--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: max-content;
+}
+
 .app__overview {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.app__overview-title,
+.app__overview-title + span {
+    font-family: Erply Ladna;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(29, 36, 51, 0.75);
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.app__overview-title + span {
+    color: rgba(0, 0, 0, 1);
 }
 
 .app__sub {
@@ -96,6 +121,7 @@
     letter-spacing: 0.02em;
     text-align: center;
     padding: 10.5px 59px;   
+    display: inline-block;
 }
 
 .app__slider {
@@ -103,14 +129,30 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    position: relative;
+    padding-inline: 40px;
+}
+
+.app__slider.mobile {
+    display: none;
 }
 
 .app__slider img {
-    /* width: 100%; */
-    width: 600px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    object-fit: contain;
+    border-radius: 4px;
+    padding-inline: 40px;
+    
 }
 
 .arrow {
+    position: absolute;
+    left: 0px;
     padding: 6px;
     border-radius: 100%;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
@@ -122,13 +164,20 @@
 }
 
 .arrow.right {
+    left: unset;
+    right: 0px;
     transform: rotate(180deg);
 }
 
 .app__similar--apps {
-    padding: 40px;
+    padding: 40px 0 40px 40px;
     width: 100%;
     max-width: 300px;
+}
+
+.similar-apps--container {
+    display: inline-block;
+    width: 100%;
 }
 
 .app__similar--apps .apps__row--header {
@@ -145,6 +194,10 @@
     gap: 16px;
     margin-bottom: 27px;
     /* justify-content: center; */
+}
+
+.app--block-content {
+    width: 100%;
 }
 
 .app--block-content > div {
@@ -177,6 +230,7 @@
 .app--block-content .app__title{
     font-family: Erply Ladna;
     font-size: 16px;
+    margin-bottom: 2px;
     font-weight: 115;
     line-height: 20px;
     letter-spacing: 0px;
@@ -192,4 +246,54 @@
     letter-spacing: 0px;
     text-align: left;
     color: rgba(29, 36, 51, 0.75);
+}
+
+@media screen and (max-width: 767px) {
+    .apps__detail {
+        grid-template-columns: 1fr;
+        padding-inline: 24px;
+    }
+
+    .app__slider {
+        display: none;
+    }
+
+    .app__slider.mobile {
+        display: flex;
+        width: 80%;
+        height: 150px;
+        margin-inline: auto;
+    }
+
+    .apps__detail--last {
+        flex-direction: column;
+        gap: 40px;
+        padding-inline: 24px;
+    }
+
+    .app__detail--last {
+        padding: 0;
+    }
+
+    .app__similar--apps {
+        padding: 0;
+    }
+
+    .app__similar--apps {
+        max-width: unset;
+    }
+
+    .similar__app--block {
+        margin-bottom: 0;
+    }
+    
+    .similar-apps--container {
+        display: flex;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .similar-apps--container > div:not(:last-of-type) {
+        margin-right: 24px;
+    }
 }

@@ -193,7 +193,7 @@ header {
 
 /* filter */
 .main__content {
-    padding-left: 0px;
+    padding-inline: 0px;
     display: flex;
     position: relative;
 }
