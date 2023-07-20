@@ -207,7 +207,7 @@
 
                 <div class="apps__home">
                     <div class="apps__home--header">
-                        <h1>Elevate your store with the premier apps available</h1>
+                        <h1>Manage Installed Apps</h1>
                         <form action="#" class="search--form">
                             <div class="filter__field filter--search">
                                 <label for="search">
@@ -220,171 +220,250 @@
                         </form>
                     </div>
 
-                    <div class="apps__row">
+                    <div class="apps-installed__row">
                         <div class="apps__row--header">
-                            <p>Top apps</p>
-                            <a href="/" class="see__more">see more</a>
+                            <p>Active Apps (5)</p>
                         </div>
-                        <div class="apps__grid">
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/motionmail.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">Motionmail</p>
-                                <p class="app__desc line-clamp">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines. Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
-                                <a href="/" class="app__cta">Install</a>
+
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden class="app-installed__cta--options">
+                            <img src="./assets/motionmail.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Motionmail</p>
+                                <p class="text-sm">Email Marketing</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/zonify.svg" alt="">
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
                                     <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
+                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
                                         <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
+                                    </div>
                                 </div>
-                                <p class="app__title">Zonify - Amazon Affiliate</p>
-                                <p class="app__desc line-clamp">Earn commissions with Amazon affiliate program</p>
-                                <a href="/" class="app__cta">Install</a>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/pdp.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">Product Discount Planner</p>
-                                <p class="app__desc line-clamp">Schedule flash & holiday sales in advanced</p>
-                                <a href="/" class="app__cta">Install</a>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md">14 days trial left</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/virtual_tours.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
+                                <div class="app-installed__modal--options">
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/info.svg" alt="">
+                                        <span>App info</span>
+                                    </a>
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/delete.svg" alt="">
+                                        <span>Delete connection</span>
+                                    </a>
                                 </div>
-                                <p class="app__title">Virtual Tours</p>
-                                <p class="app__desc line-clamp">Add stunning 360 virtual tours to your website</p>
-                                <a href="/" class="app__cta">Install</a>
+                            </div>
+                        </div>
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <img src="./assets/zonify.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Zonify - Amazon Affiliate</p>
+                                <p class="text-sm">Affiliate program</p>
+                            </div>
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
+                                    <div class="app__toggle--container">
+                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
+                                        <label for="" class="app__toggle-indcator"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md">Free</p>
+                            </div>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <img src="./assets/pdp.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Product Discount Planner</p>
+                                <p class="text-sm">Email Marketing</p>
+                            </div>
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
+                                    <div class="app__toggle--container">
+                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
+                                        <label for="" class="app__toggle-indcator"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md" data-trial-end="true">0 days trial left</p>
+                            </div>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+                                <a href="/" class="app-installed__cta app-installed__cta--upgrade">Upgrade</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <img src="./assets/virtual_tours.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Virtual Tours</p>
+                                <p class="text-sm">Media & content</p>
+                            </div>
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
+                                    <div class="app__toggle--container">
+                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
+                                        <label for="" class="app__toggle-indcator"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md">$25/month</p>
+                            </div>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+                                <a href="/" class="app-installed__cta app-installed__cta--update">Update</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <img src="./assets/ccavenue_pay_button.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">CCAvenue Pay Button</p>
+                                <p class="text-sm">Email Marketing</p>
+                            </div>
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
+                                    <div class="app__toggle--container">
+                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
+                                        <label for="" class="app__toggle-indcator"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md">7 days trial left</p>
+                            </div>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+                                <a href="/" class="app-installed__cta app-installed__cta--update">Update</a>
+                                <a href="/" class="app-installed__cta app-installed__cta--upgrade">Upgrade</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <div class="apps__row">
+
+                    <div class="apps-installed__row">
                         <div class="apps__row--header">
-                            <p>New apps</p>
-                            <a href="/" class="see__more">see more</a>
+                            <p>Disabled Apps (5)</p>
                         </div>
-                        <div class="apps__grid">
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/ccavenue_pay_button.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">CCAvenue Pay Button</p>
-                                <p class="app__desc line-clamp">Offer fast checkout for payments and donations</p>
-                                <a href="/" class="app__cta">Install</a>
+
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <img src="./assets/clipboard_bnw.svg" alt="" disabled>
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Clip: Copy to Clipboard Button</p>
+                                <p class="text-sm">Email marketing</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/reviewme_restaurant_reviews.svg" alt="">
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Disabled</p>
                                     <div class="app__toggle--container">
                                         <input type="checkbox" class="app__toggle-btn" id="">                                                                     
                                         <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
+                                    </div>
                                 </div>
-                                <p class="app__title" title="ReviewMe Restaurant Reviews">ReviewMe Restaurant Reviews</p>
-                                <p class="app__desc line-clamp">Easily collect Reviews for Your Restaurant</p>
-                                <a href="/" class="app__cta">Install</a>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/clipboard.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title" title="Clip: Copy To Clipboard Button">Clip: Copy To Clipboard Button</p>
-                                <p class="app__desc line-clamp">Place Clip anywhere for visitors to copy content</p>
-                                <a href="/" class="app__cta">Install</a>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md" data-trial-end="true">0 days trial left</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/tukse.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">Tukse Live Support Chat</p>
-                                <p class="app__desc line-clamp">Live Chat with Multiple Rooms & Chatbots</p>
-                                <a href="/" class="app__cta">Install</a>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="apps__row">
-                        <div class="apps__row--header">
-                            <p>Latest Update</p>
-                            <a href="/" class="see__more">see more</a>
-                        </div>
-                        <div class="apps__grid">
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/pod.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">POD Product Personalizer</p>
-                                <p class="app__desc line-clamp">Design and personalize any product</p>
-                                <a href="/" class="app__cta">Install</a>
+                        <div class="app-installed__row">
+                            <input type="checkbox" name="opt" id="opt" hidden class="app-installed__cta--options">
+                            <img src="./assets/tukse_bnw.svg" alt="" disabled>
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Tukse Live Support Chat</p>
+                                <p class="text-sm">Affiliate program</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/POWR.svg" alt="">
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Disabled</p>
                                     <div class="app__toggle--container">
                                         <input type="checkbox" class="app__toggle-btn" id="">                                                                     
                                         <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
+                                    </div>
                                 </div>
-                                <p class="app__title">Team Profile by POWR</p>
-                                <p class="app__desc line-clamp">Highlight team member photos & bios on your site</p>
-                                <a href="/" class="app__cta">Install</a>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/integracije.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
-                                </div>
-                                <p class="app__title">integracije.si</p>
-                                <p class="app__desc line-clamp">Connect your Store with your ERP system.</p>
-                                <a href="/" class="app__cta">Install</a>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md" data-trial-end="false">Free</p>
                             </div>
-                            <div class="app__grid">
-                                <div class="app__grid--header">
-                                    <img src="./assets/logic.svg" alt="">
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>                                                                     
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+
+                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
+                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                    <img src="./assets/dots.svg" alt="">
+                                </label>
+                                <div class="app-installed__modal--options">
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/info.svg" alt="">
+                                        <span>App info</span>
+                                    </a>
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/delete.svg" alt="">
+                                        <span>Delete connection</span>
+                                    </a>
                                 </div>
-                                <p class="app__title" title="Logic: Advanced Logic for eCom">Logic: Advanced Logic for eCom</p>
-                                <p class="app__desc line-clamp">Apply advanced business logic to eCom checkout</p>
-                                <a href="/" class="app__cta">Install</a>
                             </div>
                         </div>
                     </div>
