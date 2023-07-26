@@ -224,9 +224,17 @@
                         <div class="apps__row--header">
                             <p>Active Apps (5)</p>
                         </div>
+                        
+                        <input type="checkbox" id="switch3" hidden checked>       
+                        <input type="checkbox" id="switch4" hidden checked>       
+                        <input type="checkbox" id="switch5" hidden checked>       
+                        <input type="checkbox" id="switch6" hidden checked>       
+                        <input type="checkbox" id="switch7" hidden checked>       
+                        <input type="checkbox" name="opt1" id="opt1" hidden> <!-- more option modal -->
+                        <input type="checkbox" name="opt2" id="opt2" hidden>
 
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden class="app-installed__cta--options">
+                            <label for="switch3" hidden></label>
                             <img src="./assets/motionmail.svg" alt="">
                             <div class="app-installed__title">
                                 <p class="text-md block--title">Motionmail</p>
@@ -236,9 +244,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Enabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch3" class="app__toggle-indcator"></label>
+                                        <label for="switch3" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -250,9 +258,45 @@
                                 <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
 
                                 <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
-                                    <img src="./assets/dots.svg" alt="">
-                                </label>
+                                <label for="opt1" class="app-installed__cta app-installed__cta--options"><img src="./assets/dots.svg" alt=""></label>
+                                
+                                <div class="app-installed__modal--options">
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/info.svg" alt="">
+                                        <span>App info</span>
+                                    </a>
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/delete.svg" alt="">
+                                        <span>Delete connection</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-installed__row"> 
+                            <label for="switch4" hidden></label>
+                            <img src="./assets/zonify.svg" alt="">
+                            <div class="app-installed__title">
+                                <p class="text-md block--title">Zonify - Amazon Affiliate</p>
+                                <p class="text-sm">Affiliate program</p>
+                            </div>
+                            <div class="app-installed__status">
+                                <p class="text-sm block--title">Status</p>
+                                <div>
+                                    <p class="text-md">Enabled</p>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch4" class="app__toggle-indcator"></label>
+                                        <label for="switch4" class="app__toggle-btn"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app-installed__pricing">
+                                <p class="text-sm block--title">Pricing</p>
+                                <p class="text-md">Free</p>
+                            </div>
+                            <div class="app-installed__ctas">
+                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+
+                                <label for="opt2" class="app-installed__cta app-installed__cta--options"><img src="./assets/dots.svg" alt=""></label>
                                 <div class="app-installed__modal--options">
                                     <a href="/" class="option__list">
                                         <img src="./assets/info.svg" alt="">
@@ -266,37 +310,7 @@
                             </div>
                         </div>
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden>
-                            <img src="./assets/zonify.svg" alt="">
-                            <div class="app-installed__title">
-                                <p class="text-md block--title">Zonify - Amazon Affiliate</p>
-                                <p class="text-sm">Affiliate program</p>
-                            </div>
-                            <div class="app-installed__status">
-                                <p class="text-sm block--title">Status</p>
-                                <div>
-                                    <p class="text-md">Enabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="app-installed__pricing">
-                                <p class="text-sm block--title">Pricing</p>
-                                <p class="text-md">Free</p>
-                            </div>
-                            <div class="app-installed__ctas">
-                                <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
-
-                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
-                                    <img src="./assets/dots.svg" alt="">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <label for="switch5" hidden></label>
                             <img src="./assets/pdp.svg" alt="">
                             <div class="app-installed__title">
                                 <p class="text-md block--title">Product Discount Planner</p>
@@ -306,9 +320,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Enabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch5" class="app__toggle-indcator"></label>
+                                        <label for="switch5" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -321,13 +335,13 @@
                                 <a href="/" class="app-installed__cta app-installed__cta--upgrade">Upgrade</a>
 
                                 <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                <label 1 class="app-installed__cta app-installed__cta--options">
                                     <img src="./assets/dots.svg" alt="">
                                 </label>
                             </div>
                         </div>
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <label for="switch6" hidden></label>
                             <img src="./assets/virtual_tours.svg" alt="">
                             <div class="app-installed__title">
                                 <p class="text-md block--title">Virtual Tours</p>
@@ -337,9 +351,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Enabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch6" class="app__toggle-indcator"></label>
+                                        <label for="switch6" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -352,13 +366,13 @@
                                 <a href="/" class="app-installed__cta app-installed__cta--update">Update</a>
 
                                 <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                <label 1 class="app-installed__cta app-installed__cta--options">
                                     <img src="./assets/dots.svg" alt="">
                                 </label>
                             </div>
                         </div>
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <label for="switch7" hidden></label>
                             <img src="./assets/ccavenue_pay_button.svg" alt="">
                             <div class="app-installed__title">
                                 <p class="text-md block--title">CCAvenue Pay Button</p>
@@ -368,9 +382,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Enabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="" checked>                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch7" class="app__toggle-indcator"></label>
+                                        <label for="switch7" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -384,7 +398,7 @@
                                 <a href="/" class="app-installed__cta app-installed__cta--upgrade">Upgrade</a>
 
                                 <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
+                                <label 1 class="app-installed__cta app-installed__cta--options">
                                     <img src="./assets/dots.svg" alt="">
                                 </label>
                             </div>
@@ -396,8 +410,13 @@
                             <p>Disabled Apps (5)</p>
                         </div>
 
+                        <input type="checkbox" id="switch1" hidden>       
+                        <input type="checkbox" id="switch2" hidden>       
+                        <input type="checkbox" name="opt__disabled1" id="opt__disabled1" hidden>
+                        <input type="checkbox" name="opt__disabled2" id="opt__disabled2" hidden>
+
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden>
+                            <label for="switch1" hidden></label>
                             <img src="./assets/clipboard_bnw.svg" alt="" disabled>
                             <div class="app-installed__title">
                                 <p class="text-md block--title">Clip: Copy to Clipboard Button</p>
@@ -407,9 +426,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Disabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch1" class="app__toggle-indcator"></label>
+                                        <label for="switch1" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -419,15 +438,23 @@
                             </div>
                             <div class="app-installed__ctas">
                                 <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
+                                <a href="/" class="app-installed__cta app-installed__cta--upgrade">Upgrade</a>
 
-                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
-                                    <img src="./assets/dots.svg" alt="">
-                                </label>
+                                <label for="opt__disabled1" class="app-installed__cta app-installed__cta--options"><img src="./assets/dots.svg" alt=""></label>
+                                <div class="app-installed__modal--options">
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/info.svg" alt="">
+                                        <span>App info</span>
+                                    </a>
+                                    <a href="/" class="option__list">
+                                        <img src="./assets/delete.svg" alt="">
+                                        <span>Delete connection</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="app-installed__row">
-                            <input type="checkbox" name="opt" id="opt" hidden class="app-installed__cta--options">
+                            <label for="switch2" hidden></label>
                             <img src="./assets/tukse_bnw.svg" alt="" disabled>
                             <div class="app-installed__title">
                                 <p class="text-md block--title">Tukse Live Support Chat</p>
@@ -437,9 +464,9 @@
                                 <p class="text-sm block--title">Status</p>
                                 <div>
                                     <p class="text-md">Disabled</p>
-                                    <div class="app__toggle--container">
-                                        <input type="checkbox" class="app__toggle-btn" id="">                                                                     
-                                        <label for="" class="app__toggle-indcator"></label>
+                                    <div class="app__toggle--container">                                                              
+                                        <label for="switch2" class="app__toggle-indcator"></label>
+                                        <label for="switch2" class="app__toggle-btn"></label>
                                     </div>
                                 </div>
                             </div>
@@ -450,10 +477,7 @@
                             <div class="app-installed__ctas">
                                 <a href="/" class="app-installed__cta app-installed__cta--open">Open</a>
 
-                                <!-- <input type="checkbox" name="opt" id="opt" hidden> -->
-                                <label for="opt" class="app-installed__cta app-installed__cta--options">
-                                    <img src="./assets/dots.svg" alt="">
-                                </label>
+                                <label for="opt__disabled2" class="app-installed__cta app-installed__cta--options"><img src="./assets/dots.svg" alt=""></label>
                                 <div class="app-installed__modal--options">
                                     <a href="/" class="option__list">
                                         <img src="./assets/info.svg" alt="">

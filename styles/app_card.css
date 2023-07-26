@@ -92,13 +92,35 @@
     transform: all 0.3s ease;
 }
 
-.app__toggle-btn:checked {
+#switch1:checked ~ .app-installed__row [for="switch1"].app__toggle-btn,
+#switch2:checked ~ .app-installed__row [for="switch2"].app__toggle-btn,
+#switch3:checked ~ .app-installed__row [for="switch3"].app__toggle-btn,
+#switch4:checked ~ .app-installed__row [for="switch4"].app__toggle-btn,
+#switch5:checked ~ .app-installed__row [for="switch5"].app__toggle-btn,
+#switch6:checked ~ .app-installed__row [for="switch6"].app__toggle-btn,
+#switch7:checked ~ .app-installed__row [for="switch7"].app__toggle-btn {
     left: unset;
     right: 2px;
 }
 
-.app__toggle-btn:checked ~ .app__toggle-indcator {
+#switch1:checked ~ .app-installed__row [for="switch1"].app__toggle-indcator,
+#switch2:checked ~ .app-installed__row [for="switch2"].app__toggle-indcator,
+#switch3:checked ~ .app-installed__row [for="switch3"].app__toggle-indcator,
+#switch4:checked ~ .app-installed__row [for="switch4"].app__toggle-indcator,
+#switch5:checked ~ .app-installed__row [for="switch5"].app__toggle-indcator,
+#switch6:checked ~ .app-installed__row [for="switch6"].app__toggle-indcator,
+#switch7:checked ~ .app-installed__row [for="switch7"].app__toggle-indcator {
     background-color: #3D8AF6;
+}
+
+#switch1:checked ~ .app-installed__row [for="switch1"] + img,
+#switch2:checked ~ .app-installed__row [for="switch2"] + img,
+#switch3:checked ~ .app-installed__row [for="switch3"] + img,
+#switch4:checked ~ .app-installed__row [for="switch4"] + img,
+#switch5:checked ~ .app-installed__row [for="switch5"] + img,
+#switch6:checked ~ .app-installed__row [for="switch6"] + img,
+#switch7:checked ~ .app-installed__row [for="switch7"] + img {
+    filter: grayscale(0);
 }
 
 .app__title {

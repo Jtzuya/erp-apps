@@ -456,17 +456,22 @@ span.acc_count:empty {
 }
 
 .app-installed__row {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(186px, 1fr)); */
-    grid-template-columns: 64px 315px 160px 160px 368px;
-    /* justify-content: space-between; */
+    /* display: grid;
+    grid-template-columns: 64px 315px 160px 160px 368px; */
+    display: flex;
     gap: 16px;
     align-items: center;
     padding: 20px;
     border: 1px solid rgba(225, 230, 239, 1);
     border-radius: 4px;
     background-color: #ffffff;
-    overflow: auto;
+    /* overflow-x: auto; */
+
+    /* Hide scrollbar for IE, Edge add Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+
+    /* position: relative; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -474,14 +479,26 @@ span.acc_count:empty {
     display: none;
 }
 
-  /* Hide scrollbar for IE, Edge add Firefox */
-.app-installed__row {
-    -ms-overflow-style: none;
-    scrollbar-width: none; /* Firefox */
+.app-installed__title {
+    flex: 1;
+    max-width: 315px;
+    min-width: 155px;
+}
+
+.app-installed__title p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .app-installed__row:not(:last-of-type) {
     margin-bottom: 12px;
+}
+
+.app-installed__status,
+.app-installed__pricing {
+    max-width: 160px;
+    flex: 1;
 }
 
 .app-installed__status > div {
@@ -494,6 +511,9 @@ span.acc_count:empty {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    flex: 1;
+    max-width: 368px;
+    min-width: 296.4px;
 }
 
 .app-installed__cta {
@@ -548,7 +568,10 @@ span.acc_count:empty {
     top: 31px;
     right: 0;
     z-index: 10;
-    display: none; /* hidden by default */
+    width: 280px;
+
+    /* hidden by default */
+    display: none;
 }
 
 .app-installed__modal--options .option__list {
@@ -568,11 +591,14 @@ span.acc_count:empty {
     color: rgba(29, 36, 51, 1); 
 }
 
-.app-installed__cta--options:checked ~ .app-installed__modal--options {
-    display: flex;
+#opt1:checked ~ .app-installed__row [for="opt1"] + .app-installed__modal--options,
+#opt2:checked ~ .app-installed__row [for="opt2"] + .app-installed__modal--options,
+#opt__disabled1:checked ~ .app-installed__row [for="opt__disabled1"] + .app-installed__modal--options,
+#opt__disabled2:checked ~ .app-installed__row [for="opt__disabled2"] + .app-installed__modal--options {
+    display: block;
 }
 
-.app-installed__row img[disabled] {
+.app-installed__row img {
     filter: grayscale(100%);
 }
 
