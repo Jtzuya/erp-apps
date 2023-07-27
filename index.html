@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./styles/breadcrumb.css">
     <link rel="stylesheet" href="./styles/app_detail.css">
 
+    <!-- pricing plan component -->
+    <link rel="stylesheet" href="./styles/components/plan.css">
+
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js" defer></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js" defer></script>    
 </head>
@@ -216,7 +219,7 @@
                 </div>
             </aside>
 
-            <section class="apps__wrapper">
+            <section class="apps__wrapper app--detail">
                 <div class="apps__breadcrumb">
                     <!-- if within all apps, hide as default -->
 
@@ -244,8 +247,8 @@
                 <div class="apps__detail">
                     <div class="app__detail">
                         <div class="app__img">
-                            <img src="./assets/motionmail.svg" alt="">
-                            <h1>Motionmail</h1>
+                            <img src="./assets/zonify.svg" alt="">
+                            <h1>Zoonify - Amazon Affiliate</h1>
                         </div>
                         <p class="app__mini-desc">Add dynamic countdown timers to your emails that drive clicks and highlight upcoming events or deadlines.</p>
                         <div class="app__overview">
@@ -267,13 +270,13 @@
                                 <span>MotionMail</span>
                             </div>
                         </div>
-                        <p class="app__sub">Free to install</p>
+                        <p class="app__sub">Start from $14.95/month</p>
                         <div class="buttons__group">
-                            <!-- <div>
+                            <div>
                                 <a role="button" class="app__cta cta--open">Open</a>
                                 <a role="button" class="app__cta cta--update">Update</a>
-                            </div> -->
-                            <a role="button" class="app__cta">Install App</a>
+                            </div>
+                            <a role="button" class="app__cta cta--uninstall">Uninstall</a>
                         </div>
                     </div>
                     <div class="app__slider">
@@ -372,6 +375,91 @@
                                         </svg>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apps__detail--pricing">
+                    <h3>Pricing</h3>
+
+                    <!-- 
+                        Default state: visible choose plan buttons only
+
+                        If 
+                        Choose plan btn selected:
+                            - chosen plan set to active (show active button) & hide "choose plan" buttons
+                            - Show "change plan button"
+
+                        Radio buttons for both all buttons
+                    -->
+                    <input type="radio" name="chosen_plan" id="plan_1" checked hidden>
+                    <input type="radio" name="chosen_plan" id="plan_2" hidden>
+
+                    <div class="plans__component">
+                        <div class="plan__component" data-plan-component="1">
+                            <span class="plan--selected">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39131C16.2415 5.63539 16.2415 6.03112 15.9974 6.27519L8.3585 13.9141C8.11442 14.1582 7.71869 14.1582 7.47462 13.9141L4.00239 10.4419C3.75832 10.1978 3.75832 9.80205 4.00239 9.55798C4.24647 9.3139 4.6422 9.3139 4.88628 9.55798L7.91656 12.5883L15.1135 5.39131C15.3576 5.14723 15.7533 5.14723 15.9974 5.39131Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <p class="plan--type">BASIC PLAN</p>
+                            <h5 class="plan--price">$14.95/month</h5>
+
+                            <ul class="plan--features">
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Support Amazon Dropshipping Model</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Support Amazon Affiliate Model</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Import Unlimited Products</span>
+                                </li>
+                            </ul>
+                            <div class="buttons">
+                                <label for="plan_1" class="btn btn--default">Change Plan</label> <!-- plan 1 trigger -->
+                                <a class="btn btn--active">Active Plan</a>
+                            </div>
+                        </div>
+
+                        <div class="plan__component" data-plan-component="2">
+                            <span class="plan--selected">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9974 5.39131C16.2415 5.63539 16.2415 6.03112 15.9974 6.27519L8.3585 13.9141C8.11442 14.1582 7.71869 14.1582 7.47462 13.9141L4.00239 10.4419C3.75832 10.1978 3.75832 9.80205 4.00239 9.55798C4.24647 9.3139 4.6422 9.3139 4.88628 9.55798L7.91656 12.5883L15.1135 5.39131C15.3576 5.14723 15.7533 5.14723 15.9974 5.39131Z" fill="white"/>
+                                </svg>                                    
+                            </span>
+                            <p class="plan--type">PREMIUM PLAN</p>
+                            <h5 class="plan--price">$24.95/month</h5>
+                            <ul class="plan--features">
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Support Amazon Dropshipping Model</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Support Amazon Affiliate Model</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Import Unlimited Products</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Import Product Videos</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/feature_check.svg" alt="check icon">
+                                    <span class="plan--feature-text">Reviews Widget</span>
+                                </li>
+                            </ul>
+
+                            <div class="buttons">
+                                <label for="plan_2" class="btn btn--default">Change Plan</label>
+                                <a class="btn btn--active">Active Plan</a>
                             </div>
                         </div>
                     </div>

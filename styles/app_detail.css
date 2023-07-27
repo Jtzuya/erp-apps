@@ -26,12 +26,12 @@
     letter-spacing: -1px;
     text-align: left;
     color: rgba(29, 36, 51, 1);
-    margin-bottom: 20px;
 }
 
 .apps__detail--last h2 {
     font-weight: 400;
     letter-spacing: -1px;
+    margin-bottom: 20px;
 }
 
 .apps__detail--last .app__detail {
@@ -276,6 +276,64 @@
     letter-spacing: 0px;
     text-align: left;
     color: rgba(29, 36, 51, 0.75);
+}
+
+.apps__detail--pricing {
+    background-color: #ffffff;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+/* horizontal line separator */
+.apps__detail--pricing::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: calc(100% - 80px);
+    background-color: rgba(225, 230, 239, 1);
+}
+
+.apps__detail--pricing h3 {
+    font-family: Erply Ladna;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgba(29, 36, 51, 1);
+}
+
+.app--detail .plan__component {
+    --component-padding: 24px;
+}
+
+/* plan actions */
+.apps__detail--pricing .plans__component .plan__component .btn--active {
+    display: none;
+}
+
+/* if plan 1 is checked, hide plan 2 and vice-versa */
+.apps__detail--pricing #plan_1:checked ~ .plans__component [data-plan-component="1"] [for="plan_1"],
+.apps__detail--pricing #plan_2:checked ~ .plans__component [data-plan-component="2"] [for="plan_2"] {
+    display: none;
+}
+
+.apps__detail--pricing #plan_1:checked ~ .plans__component [data-plan-component="1"] [for="plan_1"] + .btn--active,
+.apps__detail--pricing #plan_1:checked ~ .plans__component [data-plan-component="1"] .plan--selected,
+.apps__detail--pricing #plan_2:checked ~ .plans__component [data-plan-component="2"] [for="plan_2"] + .btn--active,
+.apps__detail--pricing #plan_2:checked ~ .plans__component [data-plan-component="2"] .plan--selected {
+    display: block;
+}
+
+.apps__detail--pricing #plan_1:checked ~ .plans__component [data-plan-component="1"],
+.apps__detail--pricing #plan_2:checked ~ .plans__component [data-plan-component="2"] {
+    border: 1px solid #166EE8;
 }
 
 @media screen and (max-width: 767px) {

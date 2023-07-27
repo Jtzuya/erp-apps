@@ -1,0 +1,108 @@
+.plans__component {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plan__component {
+    --component-padding: 40px;
+    padding: var(--component-padding);
+    background-color: #fff;
+    border: 1px solid #E1E6EF;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+    width: 100%;
+    max-width: 377px;
+    min-height: 344px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* selected icon hidden by default */
+.plan__component .plan--selected {
+    --scope: 20px;
+    --bg: #166EE8;
+    background-color: var(--bg);
+    position: absolute;
+    right: calc( var(--component-padding) / 2);
+    top: calc(var(--component-padding) / 2);
+    width: var(--scope);
+    height: var(--scope);
+    border-radius: var(--scope);
+    display: none;
+}
+
+.plan__component .plan--type,
+.plan__component .plan--feature-text {
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(29, 36, 51, 0.75);
+}
+
+.plan__component .plan--price {
+    font-family: Erply Ladna;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    color: rgba(29, 36, 51, 1);
+}
+
+.plan__component .plan--features {
+    margin-bottom: auto;
+}
+
+.plan__component .plan--features li {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.plan__component .plan--features li:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.plan__component .plan--features li img {
+    height: 100%;
+}
+
+.plan__component .buttons {
+    padding-top: 20px;
+    display: grid;
+    gap: 8px;
+}
+
+.plan__component .buttons .btn {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10.5px;
+
+    font-family: Erply Ladna;
+    font-size: 16px;
+    font-weight: 96;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.plan__component .buttons .btn--default {
+    background-color: rgba(61, 138, 246, 1);
+    color: #fff;
+    cursor: pointer;
+}
+
+.plan__component .buttons .btn--active {
+    background-color: rgba(225, 230, 239, 1);
+    color: rgba(29, 36, 51, 0.5);
+    cursor: not-allowed;
+}
