@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+.sidebar__categories .acc__trigger {
+    max-height: 40px;
+}
+
 .acc__form--container {
     height: 0;
     transform: all 0.3s ease;
@@ -43,6 +47,22 @@
 
 .acc__form--container form div:last-of-type {
     margin-bottom: 24px;
+}
+
+.acc__form--container a {
+    display: block;
+    padding-left: 48px;
+    padding-left: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 48px;
+
+    font-family: Erply Ladna;
+    font-size: 14px;
+    font-weight: 96;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;    
 }
 
 .acc__tab-right svg,
@@ -59,7 +79,17 @@
     transform: rotate(180deg);
 }
 
+.sidebar__categories .acc__trigger:checked ~ .acc__label .acc__tab-right svg,
+.sidebar__categories .acc__trigger:checked ~ .acc__label .acc__tab-right img {
+    transform: rotate(90deg);
+}
+
 /* test */
+.acc__tab-right {
+    position: absolute;
+    right: 20px;
+}
+
 .acc__tab-right span {
     position: relative;
     z-index: 10;

@@ -370,10 +370,12 @@ span.acc_count:empty {
     padding-block: 8px;
     padding-inline: 20px;
     transition: var(--transition);
+    position: relative;
 }
 
 .sidebar__link span,
-.category__link span {
+.category__link span,
+.acc__tab-left span {
     margin-left: 8px;
     font-family: Erply Ladna;
     font-size: 16px;
@@ -382,18 +384,44 @@ span.acc_count:empty {
     letter-spacing: 0px;
     text-align: left;
     flex: 1;
+    overflow: hidden;
 }
 
 .sidebar__link.sidebar--active,
 .category__link.sidebar--active,
+.sidebar__categories .acc__form--container a.sidebar--active,
 .sidebar__link:hover,
-.category__link:hover {
+.category__link:hover,
+.sidebar__categories .acc__form--container a:hover {
     background-color: var(--sidebar-link-active);
+}
+
+.sidebar__categories .acc__form--container {
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+}
+
+.sidebar--opened {
+    background-color: #F2F4F8;
 }
 
 /* sidebar categories */
 .sidebar__categories {
     margin-top: 12px;
+}
+
+.sidebar__categories .accordion {
+    padding: 0;
+    border-bottom: 0;
+    transition: var(--transition);
+}
+
+.sidebar__categories .accordion .acc__label {
+    padding: 8px 20px;
+}
+
+.sidebar__categories .acc__label {
+    margin-bottom: 0;
 }
 
 .sidebar__category-title {
